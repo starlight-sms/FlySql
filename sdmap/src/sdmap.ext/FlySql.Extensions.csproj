@@ -4,22 +4,18 @@
     <VersionPrefix>0.9.1</VersionPrefix>
     <TargetFrameworks>netstandard1.6;net451</TargetFrameworks>
     <AssemblyName>sdmap.ext</AssemblyName>
-    <PackageId>sdmap.ext</PackageId>
+    <PackageId>FlySql.Extensions</PackageId>
     <PackageTags>dynamic sql;sdmap</PackageTags>
-    <PackageReleaseNotes>Note:
-This version contains a BREAKING CHANGES than 0.10.1
-
-For more information, please view:
-https://github.com/sdcb/sdmap/blob/master/ReleaseNotes.md</PackageReleaseNotes>
-    <PackageLicenseUrl>https://github.com/sdcb/sdmap/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageReleaseNotes>https://github.com/starlight-sms/FlySql/blob/master/ReleaseNotes.md</PackageReleaseNotes>
+    <PackageLicenseUrl>https://github.com/starlight-sms/FlySql/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/sdcb/sdmap</RepositoryUrl>
+    <RepositoryUrl>https://github.com/starlight-sms/FlySql</RepositoryUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>0.10.6</Version>
+    <Version>0.10.7</Version>
     <Description>Useful extensions for sdmap/Dapper.</Description>
-    <PackageProjectUrl>https://github.com/sdcb/sdmap</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/starlight-sms/FlySql</PackageProjectUrl>
     <Authors>sdcb</Authors>
     <Copyright>MIT</Copyright>
   </PropertyGroup>

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace FlySql.ext
+namespace FlySql.Extensions
 {
     public class EmbeddedResourceSqlEmiter : ISqlEmiter
     {

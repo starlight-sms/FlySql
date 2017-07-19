@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FlySql.ext
+namespace FlySql.Extensions
 {
     public interface ISqlEmiter
     {

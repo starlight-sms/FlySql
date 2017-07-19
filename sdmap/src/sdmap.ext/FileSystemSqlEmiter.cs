@@ -5,7 +5,7 @@ using System.IO;
 using System.Text;
 using System.Threading;
 
-namespace FlySql.ext
+namespace FlySql.Extensions
 {
     public class FileSystemSqlEmiter : ISqlEmiter
     {

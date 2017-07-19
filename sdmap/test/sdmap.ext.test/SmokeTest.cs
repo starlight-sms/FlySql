@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace FlySql.ext.test
+namespace FlySql.Extensions.test
 {
     public class SmokeTest
     {
