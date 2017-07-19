@@ -1,11 +1,11 @@
 ﻿using Antlr4.Runtime;
-using sdmap.Parser.G4;
+using FlySql.Parser.G4;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace sdmap.unittest.LexerTest
+namespace FlySql.unittest.LexerTest
 {
     public class LexerTestBase
     {

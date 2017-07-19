@@ -1,12 +1,12 @@
-﻿using sdmap.Parser.Visitor;
-using sdmap.Compiler;
+﻿using FlySql.Parser.Visitor;
+using FlySql.Compiler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace sdmap.IntegratedTest
+namespace FlySql.IntegratedTest
 {
     public class IncludeTest
     {

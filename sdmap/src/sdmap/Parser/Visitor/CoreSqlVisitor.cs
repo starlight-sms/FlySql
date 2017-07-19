@@ -1,10 +1,10 @@
 ﻿using Antlr4.Runtime;
 using Antlr4.Runtime.Misc;
-using sdmap.Functional;
-using sdmap.Macros;
-using sdmap.Parser.G4;
-using sdmap.Utils;
-using sdmap.Compiler;
+using FlySql.Functional;
+using FlySql.Macros;
+using FlySql.Parser.G4;
+using FlySql.Utils;
+using FlySql.Compiler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +12,9 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
-using static sdmap.Parser.G4.SdmapParser;
+using static FlySql.Parser.G4.SdmapParser;
 
-namespace sdmap.Parser.Visitor
+namespace FlySql.Parser.Visitor
 {
     internal class CoreSqlVisitor : SdmapParserBaseVisitor<Result>
     {

@@ -1,4 +1,4 @@
-﻿using sdmap.Functional;
+﻿using FlySql.Functional;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace sdmap.Utils
+namespace FlySql.Utils
 {
     internal class StringUtil
     {

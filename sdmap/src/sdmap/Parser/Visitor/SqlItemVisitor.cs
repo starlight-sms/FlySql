@@ -1,15 +1,15 @@
 ﻿using Antlr4.Runtime.Misc;
-using sdmap.Functional;
-using sdmap.Parser.G4;
-using sdmap.Utils;
-using sdmap.Compiler;
+using FlySql.Functional;
+using FlySql.Parser.G4;
+using FlySql.Utils;
+using FlySql.Compiler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using static sdmap.Parser.G4.SdmapLexer;
+using static FlySql.Parser.G4.SdmapLexer;
 
-namespace sdmap.Parser.Visitor
+namespace FlySql.Parser.Visitor
 {
     internal class SqlItemVisitor : SdmapParserBaseVisitor<Result>
     {

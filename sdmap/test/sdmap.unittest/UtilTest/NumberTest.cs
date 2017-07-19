@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-using static sdmap.Utils.NumberUtil;
+using static FlySql.Utils.NumberUtil;
 
-namespace sdmap.unittest.UtilTest
+namespace FlySql.unittest.UtilTest
 {
     public class NumberTest
     {

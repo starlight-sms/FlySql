@@ -1,12 +1,12 @@
-﻿using sdmap.Macros.Implements;
-using sdmap.Utils;
+﻿using FlySql.Macros.Implements;
+using FlySql.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace sdmap.unittest.MacroTest
+namespace FlySql.unittest.MacroTest
 {
     public class MacroUtilTest
     {

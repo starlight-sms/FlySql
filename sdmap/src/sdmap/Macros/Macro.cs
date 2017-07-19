@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace sdmap.Macros
+namespace FlySql.Macros
 {
     public class Macro
     {

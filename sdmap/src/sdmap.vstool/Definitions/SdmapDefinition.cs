@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sdmap.Vstool.Definitions
+namespace FlySql.Vstool.Definitions
 {
 #pragma warning disable CS0169
     class SdmapDefinition

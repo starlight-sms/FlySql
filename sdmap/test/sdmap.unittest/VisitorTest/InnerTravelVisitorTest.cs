@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace sdmap.unittest.VisitorTest
+namespace FlySql.unittest.VisitorTest
 {
     public class InnerTravelVisitorTest : VisitorTestBase
     {

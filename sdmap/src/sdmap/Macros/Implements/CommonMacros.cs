@@ -1,6 +1,6 @@
-﻿using sdmap.Functional;
-using sdmap.Macros.Attributes;
-using sdmap.Compiler;
+﻿using FlySql.Functional;
+using FlySql.Macros.Attributes;
+using FlySql.Compiler;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Text;
 
-namespace sdmap.Macros.Implements
+namespace FlySql.Macros.Implements
 {
     internal static class CommonMacros
     {

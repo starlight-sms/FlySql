@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
-using static sdmap.Utils.StringUtil;
+using static FlySql.Utils.StringUtil;
 
-namespace sdmap.unittest.UtilTest
+namespace FlySql.unittest.UtilTest
 {
     public class StringTest
     {

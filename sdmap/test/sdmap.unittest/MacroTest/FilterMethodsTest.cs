@@ -1,13 +1,13 @@
-﻿using sdmap.Macros;
-using sdmap.Macros.Implements;
-using sdmap.unittest.MacroTest.FilterMethodsImpl;
+﻿using FlySql.Macros;
+using FlySql.Macros.Implements;
+using FlySql.unittest.MacroTest.FilterMethodsImpl;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace sdmap.unittest.MacroTest
+namespace FlySql.unittest.MacroTest
 {
     public class FilterMethodsTest
     {

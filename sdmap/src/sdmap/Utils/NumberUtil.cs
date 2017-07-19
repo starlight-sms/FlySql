@@ -1,10 +1,10 @@
-﻿using sdmap.Functional;
+﻿using FlySql.Functional;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace sdmap.Utils
+namespace FlySql.Utils
 {
     internal class NumberUtil
     {

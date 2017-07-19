@@ -1,11 +1,11 @@
-﻿using sdmap.Functional;
-using sdmap.Macros;
+﻿using FlySql.Functional;
+using FlySql.Macros;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace sdmap.Compiler
+namespace FlySql.Compiler
 {
     public class SdmapCompilerContext
     {

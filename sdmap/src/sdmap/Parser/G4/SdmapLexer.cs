@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace sdmap.Parser.G4
+namespace FlySql.Parser.G4
 {
     public partial class SdmapLexer
     {

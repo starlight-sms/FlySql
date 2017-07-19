@@ -1,14 +1,14 @@
 ﻿using Antlr4.Runtime;
-using sdmap.Functional;
-using sdmap.Macros;
-using sdmap.Parser.G4;
-using sdmap.Parser.Visitor;
+using FlySql.Functional;
+using FlySql.Macros;
+using FlySql.Parser.G4;
+using FlySql.Parser.Visitor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace sdmap.Compiler
+namespace FlySql.Compiler
 {
     public class SdmapCompiler
     {

@@ -1,11 +1,11 @@
-﻿using sdmap.Compiler;
+﻿using FlySql.Compiler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace sdmap.IntegratedTest
+namespace FlySql.IntegratedTest
 {
     public class IfEmptyTest
     {

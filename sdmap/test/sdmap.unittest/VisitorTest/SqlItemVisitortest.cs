@@ -1,8 +1,8 @@
-﻿using sdmap.Parser.Visitor;
+﻿using FlySql.Parser.Visitor;
 using System.Linq;
 using Xunit;
 
-namespace sdmap.unittest.VisitorTest
+namespace FlySql.unittest.VisitorTest
 {
     public class SqlItemVisitorTest : VisitorTestBase
     {

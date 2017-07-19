@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 
-namespace sdmap.Vstool.NavigateTo
+namespace FlySql.Vstool.NavigateTo
 {
     [Export(typeof(INavigateToItemProviderFactory))]
     internal class NavigateToItemProviderFactory : INavigateToItemProviderFactory

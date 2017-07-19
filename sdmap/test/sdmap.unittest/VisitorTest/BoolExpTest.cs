@@ -1,5 +1,5 @@
-﻿using sdmap.Compiler;
-using sdmap.Parser.Visitor;
+﻿using FlySql.Compiler;
+using FlySql.Parser.Visitor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace sdmap.unittest.VisitorTest
+namespace FlySql.unittest.VisitorTest
 {
     public class BoolExpTest : VisitorTestBase
     {

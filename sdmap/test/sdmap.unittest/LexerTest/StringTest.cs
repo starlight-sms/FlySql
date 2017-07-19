@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-using static sdmap.Parser.G4.SdmapLexer;
+using static FlySql.Parser.G4.SdmapLexer;
 
-namespace sdmap.unittest.LexerTest
+namespace FlySql.unittest.LexerTest
 {
     public class StringTest : LexerTestBase
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace sdmap.ext
+namespace FlySql.ext
 {
     public interface ISqlEmiter
     {

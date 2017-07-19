@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using static sdmap.Parser.G4.SdmapParser;
+using static FlySql.Parser.G4.SdmapParser;
 
-namespace sdmap.Utils
+namespace FlySql.Utils
 {
     internal static class NameUtil
     {

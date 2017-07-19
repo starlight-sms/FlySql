@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sdmap.Utils
+namespace FlySql.Utils
 {
     internal static class HashUtil
     {

@@ -1,13 +1,13 @@
-﻿using sdmap.Functional;
-using sdmap.Macros.Attributes;
-using sdmap.Compiler;
+﻿using FlySql.Functional;
+using FlySql.Macros.Attributes;
+using FlySql.Compiler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace sdmap.Macros.Implements
+namespace FlySql.Macros.Implements
 {
     internal static class MacroUtil
     {

@@ -1,11 +1,11 @@
-﻿using sdmap.Compiler;
+﻿using FlySql.Compiler;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading;
 
-namespace sdmap.ext
+namespace FlySql.ext
 {
     public class FileSystemSqlEmiter : ISqlEmiter
     {

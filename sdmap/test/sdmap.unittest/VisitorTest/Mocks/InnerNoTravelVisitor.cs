@@ -1,12 +1,12 @@
-﻿using sdmap.Functional;
-using sdmap.Parser.G4;
+﻿using FlySql.Functional;
+using FlySql.Parser.G4;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Antlr4.Runtime.Misc;
 
-namespace sdmap.unittest.VisitorTest.Mocks
+namespace FlySql.unittest.VisitorTest.Mocks
 {
     public class InnerNoTravelVisitor : SdmapParserBaseVisitor<Result>
     {

@@ -1,11 +1,11 @@
-﻿using sdmap.Functional;
-using sdmap.Compiler;
+﻿using FlySql.Functional;
+using FlySql.Compiler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace sdmap.unittest.MacroTest.FilterMethodsImpl
+namespace FlySql.unittest.MacroTest.FilterMethodsImpl
 {
     public static class HelloWorldImpl
     {

@@ -1,14 +1,14 @@
-﻿using sdmap.Functional;
-using sdmap.Macros;
-using sdmap.Compiler;
+﻿using FlySql.Functional;
+using FlySql.Macros;
+using FlySql.Compiler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
-using sdmap.Macros.Implements;
+using FlySql.Macros.Implements;
 
-namespace sdmap.IntegratedTest
+namespace FlySql.IntegratedTest
 {
     public class AddMacroTest
     {
