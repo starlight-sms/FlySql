@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\sdmap\sdmap.csproj" />
+    <ProjectReference Include="..\..\src\sdmap\FlySql.csproj" />
   </ItemGroup>
 
   <ItemGroup>

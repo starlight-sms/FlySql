@@ -39,7 +39,7 @@ https://github.com/sdcb/sdmap/blob/master/ReleaseNotes.md</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\sdmap\sdmap.csproj" />
+    <ProjectReference Include="..\sdmap\FlySql.csproj" />
   </ItemGroup>
 
 </Project>
