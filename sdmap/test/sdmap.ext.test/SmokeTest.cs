@@ -21,8 +21,8 @@ namespace FlySql.Extensions.test
         [Fact]
         public void SqlEmiterTest()
         {
-            SdmapExtensions.SetSqlEmiter(new SimpleSqlEmiter());
-            var actual = SdmapExtensions.EmitSql("test", null);
+            FlySqlExtensions.SetSqlEmiter(new SimpleSqlEmiter());
+            var actual = FlySqlExtensions.EmitSql("test", null);
             Assert.Equal("test", actual);
         }
 
@@ -32,13 +32,13 @@ namespace FlySql.Extensions.test
             Directory.CreateDirectory("sqls");
             var tempFile = @"sqls\test.sdmap";
             File.WriteAllText(tempFile, "sql Hello{Hello}");
-            SdmapExtensions.SetSqlDirectoryAndWatch(@".\sqls");
+            FlySqlExtensions.SetSqlDirectoryAndWatch(@".\sqls");
 
             try
             {
                 File.WriteAllText(tempFile, "sql Hello{Hello2}");
                 Thread.Sleep(30);
-                var text = SdmapExtensions.EmitSql("Hello", null);
+                var text = FlySqlExtensions.EmitSql("Hello", null);
                 Assert.Equal("Hello2", text);
             }
             finally
