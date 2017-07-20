@@ -1,6 +1,6 @@
-﻿using sdmap.Compiler;
-using sdmap.Functional;
-using sdmap.Macros.Implements;
+﻿using FlySql.Compiler;
+using FlySql.Functional;
+using FlySql.Macros.Implements;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace sdmap.unittest.MacroImplTest
+namespace FlySql.unittest.MacroImplTest
 {
     public class GreaterLessTest
     {
