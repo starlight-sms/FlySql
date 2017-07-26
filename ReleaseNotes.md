@@ -1,3 +1,6 @@
+## 0.11.0
+- [core] support IDictionary in parameter argument
+
 ## 0.10.5
 - [core] fix mixed #if and macro runtime error.
 - [core] make the TryEmit method synchronizable.
@@ -8,6 +11,7 @@
 - [ext] add EmbeddedResourceSqlEmiter.
 - [vstool] fix the #if folding issue
 - [vstool] fix the keyword 'null' syntax color issue.
+- [vstool-0.10.8] fix a Visual Studio crashing error.
 
 ## 0.10.0
 - [core] support #if(){} syntax.
