@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace sdmap.Utils
+namespace FlySql.Utils
 {
     internal static class SqlTextUtil
     {

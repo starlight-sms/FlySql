@@ -19,6 +19,6 @@ using System.Runtime.InteropServices;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("d68942d4-80c5-459e-84bc-12a517495544")]
 [assembly: CLSCompliant(false)]
-[assembly: InternalsVisibleTo("sdmap.test")]
-[assembly: InternalsVisibleTo("sdmap.unittest")]
+[assembly: InternalsVisibleTo("FlySql.Test")]
+[assembly: InternalsVisibleTo("FlySql.UnitTest")]
 [assembly: InternalsVisibleTo("Anonymously Hosted DynamicMethods Assembly")]

@@ -12,7 +12,7 @@ using Microsoft.VisualStudio;
 using System.Diagnostics;
 using EnvDTE;
 
-namespace FlySql.Vstool.NavigateTo
+namespace sdmap.Vstool.NavigateTo
 {
     [Export(typeof(INavigateToItemProviderFactory))]
     internal class NavigateToItemProviderFactory : INavigateToItemProviderFactory
