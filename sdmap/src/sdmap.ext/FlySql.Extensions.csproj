@@ -13,7 +13,7 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>0.11.5</Version>
+    <Version>0.11.6</Version>
     <Description>Useful extensions for sdmap/Dapper.</Description>
     <PackageProjectUrl>https://github.com/starlight-sms/FlySql</PackageProjectUrl>
     <Authors>sdcb</Authors>

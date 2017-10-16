@@ -10,7 +10,6 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.VisualStudio;
 using System.Diagnostics;
-using EnvDTE;
 
 namespace sdmap.Vstool.NavigateTo
 {
@@ -18,7 +17,7 @@ namespace sdmap.Vstool.NavigateTo
     {
         public INavigateToItemDisplay CreateItemDisplay(NavigateToItem item)
         {
-            return new NavigateToItemDisplay();
+            return new NavigateToItemDisplay(item);
         }
     }
 }

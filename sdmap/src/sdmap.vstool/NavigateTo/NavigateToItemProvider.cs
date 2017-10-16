@@ -10,6 +10,10 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.VisualStudio;
 using System.Diagnostics;
+using System.IO;
+using Antlr4.Runtime;
+using sdmap.Parser.G4;
+using System.Threading;
 using EnvDTE;
 
 namespace sdmap.Vstool.NavigateTo
@@ -19,42 +23,53 @@ namespace sdmap.Vstool.NavigateTo
         private static NavigateToItemDisplayFactory _navigateToItemDisplayFactory
             = new NavigateToItemDisplayFactory();
 
+        private CancellationTokenSource _cancellationTokenSource;
+
+        private readonly IServiceProvider _serviceProvider;
+
+        public NavigateToItemProvider(
+            IServiceProvider serviceProvider)
+        {
+            _serviceProvider = serviceProvider;
+        }
+
         public void Dispose()
         {
         }
 
         public void StartSearch(INavigateToCallback callback, string searchValue)
         {
-            var solution = (IVsSolution)Package.GetGlobalService(typeof(IVsSolution));
-            foreach (Project project in Util.GetCSharpProjects(solution))
+            _cancellationTokenSource = new CancellationTokenSource();
+            System.Threading.Tasks.Task.Run(() =>
             {
-                var files = project.ProjectItems
-                    .OfType<ProjectItem>()
-                    .SelectMany(x =>
-                    {
-                        var filenames = new List<string>(x.FileCount);
-                        for (short i = 0; i < x.FileCount; ++i)
-                        {
-                            filenames.Add(x.FileNames[i]);
-                        }
-                        return filenames;
-                    })
-                    .Where(x => x.ToUpperInvariant().EndsWith(".sdmap"));
-            }
-
-            callback.AddItem(new NavigateToItem(
-                name: "name",
-                kind: "kind",
-                language: "language",
-                secondarySort: "secondarySort",
-                tag: "tag",
-                matchKind: MatchKind.Exact,
-                displayFactory: _navigateToItemDisplayFactory));
-            callback.Done();
-        }        
+                Search(callback, searchValue);
+            });
+        }
 
         public void StopSearch()
         {
+            _cancellationTokenSource.Cancel();
+        }
+
+        private void Search(INavigateToCallback callback, string searchValue)
+        {
+            var i = 0;
+            foreach (var file in Util.GetSolutionAllSdmapFiles(_serviceProvider))
+            {
+                if (_cancellationTokenSource.IsCancellationRequested)
+                    break;
+
+                i += 1;
+
+                foreach (var match in SdmapIdListener.FindMatches(file, searchValue))
+                {
+                    callback.AddItem(match.ToNavigateToItem(_navigateToItemDisplayFactory));
+                }
+
+                callback.ReportProgress(i, Math.Max(100, i + 1));
+            }
+
+            callback.Done();
         }
     }
 }
