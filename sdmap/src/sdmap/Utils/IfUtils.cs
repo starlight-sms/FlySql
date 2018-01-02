@@ -13,7 +13,7 @@ namespace FlySql.Utils
     {
         public static bool PropertyExistsAndEvalToTrue(object obj, string propName)
         {
-            var val = CommonMacros.GetPropValue(obj, propName);
+            var val = DynamicRuntimeMacros.GetPropValue(obj, propName);
             if (val is bool) return (bool)val;
             if (val is bool?) return ((bool?)val).GetValueOrDefault();
 
@@ -21,21 +21,12 @@ namespace FlySql.Utils
         }
 
         public static object LoadProp(object obj, string propName)
-        {
-            return CommonMacros.GetPropValue(obj, propName);
-        }
+            => DynamicRuntimeMacros.GetPropValue(obj, propName);
 
         public static Result<string> ExecuteEmiter(EmitFunction ef, SdmapCompilerContext ctx, object obj)
-        {
-            return ef(ctx, obj);
-        }
+            => ef(ctx, obj);
 
         public static bool IsEmpty(object obj)
-        {
-            if (obj == null) return true;
-            if (obj is string) return string.IsNullOrEmpty((string)obj);
-            if (obj is IEnumerable) return CommonMacros.ArrayEmpty(obj);
-            return false;
-        }
+            => RuntimeMacros.IsEmpty(obj);
     }
 }

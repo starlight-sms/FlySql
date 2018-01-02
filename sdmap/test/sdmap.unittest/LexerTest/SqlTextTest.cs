@@ -9,7 +9,7 @@ using Xunit;
 
 using static FlySql.Parser.G4.SdmapLexer;
 
-namespace sdmap.unittest.LexerTest
+namespace FlySql.unittest.LexerTest
 {
     public class SqlTextTest
     {

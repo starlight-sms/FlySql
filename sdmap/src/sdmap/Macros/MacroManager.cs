@@ -17,7 +17,7 @@ namespace FlySql.Macros
 
         public MacroManager()
         {
-            AddImplements(typeof(CommonMacros));
+            AddImplements(typeof(DynamicRuntimeMacros));
         }
 
         public void AddImplements(Type type)

@@ -44,13 +44,18 @@ namespace FlySql.Functional
 
         public static Result Combine(IEnumerable<Result> results)
         {
-            foreach (Result result in results)
+            foreach (Result result in results.Where(x => x != null))
             {
                 if (result.IsFailure)
                     return result;
             }
 
             return Ok();
+        }
+
+        public static Result Combine(params Result[] results)
+        {
+            return Combine((IEnumerable<Result>)results);
         }
     }
 

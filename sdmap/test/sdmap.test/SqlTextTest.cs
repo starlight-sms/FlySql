@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace sdmap.test
+namespace FlySql.test
 {
     public class SqlTextTest
     {

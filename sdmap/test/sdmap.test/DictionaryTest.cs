@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace sdmap.test
+namespace FlySql.test
 {
     public class DictionaryTest
     {
