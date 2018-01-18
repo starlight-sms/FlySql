@@ -1,6 +1,6 @@
-﻿using sdmap.Functional;
-using sdmap.Macros.Implements;
-using sdmap.Compiler;
+﻿using FlySql.Compiler;
+using FlySql.Functional;
+using FlySql.Macros.Implements;
 using System;
 using System.Collections.Generic;
 using System.Linq;
