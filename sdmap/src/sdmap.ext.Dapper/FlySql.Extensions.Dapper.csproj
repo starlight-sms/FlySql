@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.0;net451</TargetFrameworks>
-    <AssemblyName>sdmap.ext.Dapper</AssemblyName>
+    <AssemblyName>FlySql.Extensions.Dapper</AssemblyName>
     <PackageId>sdmap.ext.Dapper</PackageId>
     <PackageTags>dynamic sql;sdmap;dapper</PackageTags>
     <PackageReleaseNotes>
@@ -29,7 +29,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\sdmap.ext\sdmap.ext.csproj" />
+    <ProjectReference Include="..\sdmap.ext\FlySql.Extensions.csproj" />
+    <ProjectReference Include="..\sdmap\FlySql.csproj" />
   </ItemGroup>
 
 </Project>

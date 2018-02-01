@@ -1,8 +1,9 @@
-﻿using System;
+﻿using FlySql.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace sdmap.ext
+namespace FlySql.Extensions
 {
     public class SdmapContext
     {

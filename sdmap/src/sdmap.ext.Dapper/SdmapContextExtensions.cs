@@ -5,7 +5,7 @@ using System.Data;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sdmap.ext
+namespace FlySql.Extensions
 {
     public static class SdmapContextExtensions
     {

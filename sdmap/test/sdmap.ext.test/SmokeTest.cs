@@ -1,4 +1,4 @@
-﻿using sdmap.ext.Dapper;
+﻿using FlySql.Extensions.Dapper;
 using System;
 using System.Collections.Generic;
 using System.IO;

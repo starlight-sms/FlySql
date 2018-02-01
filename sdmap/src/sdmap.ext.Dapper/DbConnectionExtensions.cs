@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using FlySql.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +9,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace sdmap.ext.Dapper
+namespace FlySql.Extensions.Dapper
 {
     public static partial class DbConnectionExtensions
     {

@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\sdmap.ext.Dapper\FlySql.Extensions.Dapper.csproj" />
     <ProjectReference Include="..\..\src\sdmap.ext\FlySql.Extensions.csproj" />
   </ItemGroup>
 
