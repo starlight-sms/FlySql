@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.0;net451</TargetFrameworks>
     <AssemblyName>FlySql.Extensions.Dapper</AssemblyName>
-    <PackageId>sdmap.ext.Dapper</PackageId>
+    <PackageId>FlySql.Extensions.Dapper</PackageId>
     <PackageTags>dynamic sql;sdmap;dapper</PackageTags>
     <PackageReleaseNotes>
       For more information, please view:
