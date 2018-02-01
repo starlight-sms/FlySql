@@ -5,9 +5,9 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FlySql.Extensions
+namespace sdmap.ext.Dapper
 {
-    public static partial class FlySqlExtensions
+    public static partial class DbConnectionExtensions
     {
         public static Task<IEnumerable<dynamic>> QueryByMapAsync(this IDbConnection cnn, 
             string sqlMapName, 

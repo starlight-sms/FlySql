@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FB5AAE70-8943-448C-83DC-138D926AAE94}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlySql.Test", "test\sdmap.test\FlySql.Test.csproj", "{D6A5E85D-31B1-4D42-BDD6-B5D1E77FC899}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlySql", "src\sdmap\FlySql.csproj", "{9829A2C4-2B7B-4096-81E6-5A04AC457880}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sdmap.ext.Dapper", "src\sdmap.ext.Dapper\sdmap.ext.Dapper.csproj", "{CAA406FC-AB25-48E0-82B2-8D683937D88A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +55,10 @@ Global
 		{D6A5E85D-31B1-4D42-BDD6-B5D1E77FC899}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6A5E85D-31B1-4D42-BDD6-B5D1E77FC899}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6A5E85D-31B1-4D42-BDD6-B5D1E77FC899}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9829A2C4-2B7B-4096-81E6-5A04AC457880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9829A2C4-2B7B-4096-81E6-5A04AC457880}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9829A2C4-2B7B-4096-81E6-5A04AC457880}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9829A2C4-2B7B-4096-81E6-5A04AC457880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA406FC-AB25-48E0-82B2-8D683937D88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA406FC-AB25-48E0-82B2-8D683937D88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA406FC-AB25-48E0-82B2-8D683937D88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA406FC-AB25-48E0-82B2-8D683937D88A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,7 +69,7 @@ Global
 		{F4673720-6FED-4297-A987-BA8A7135F641} = {37A082F1-8179-4EEA-93D8-1C282B5AC65A}
 		{7FA299A4-0360-45F4-9349-CCC7C8456241} = {37A082F1-8179-4EEA-93D8-1C282B5AC65A}
 		{D6A5E85D-31B1-4D42-BDD6-B5D1E77FC899} = {37A082F1-8179-4EEA-93D8-1C282B5AC65A}
-		{9829A2C4-2B7B-4096-81E6-5A04AC457880} = {FB5AAE70-8943-448C-83DC-138D926AAE94}
+		{CAA406FC-AB25-48E0-82B2-8D683937D88A} = {FB5AAE70-8943-448C-83DC-138D926AAE94}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {346F9DC7-F957-409C-BC7F-034FEAB0E364}

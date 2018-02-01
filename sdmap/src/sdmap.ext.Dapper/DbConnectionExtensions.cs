@@ -1,5 +1,4 @@
 ﻿using Dapper;
-using FlySql.Compiler;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -9,11 +8,11 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace FlySql.Extensions
+namespace sdmap.ext.Dapper
 {
-    public static partial class FlySqlExtensions
+    public static partial class DbConnectionExtensions
     {
-        private static ISqlEmiter SqlEmiter;
+        private static ISdmapEmiter SqlEmiter;
 
         public static void SetSqlDirectory(string sqlDirectory)
         {
@@ -35,14 +34,14 @@ namespace FlySql.Extensions
             SetSqlEmiter(MultipleAssemblyEmbeddedResourceSqlEmiter.CreateFrom(assemblies));
         }
 
-        public static void SetSqlEmiter(ISqlEmiter sqlEmiter)
+        public static void SetSqlEmiter(ISdmapEmiter sqlEmiter)
         {
             SqlEmiter = sqlEmiter;
         }
 
         public static string EmitSql(string sqlMapId, object param)
         {
-            return SqlEmiter.EmitSql(sqlMapId, param);
+            return SqlEmiter.Emit(sqlMapId, param);
         }
 
         public static int ExecuteByMap(this IDbConnection cnn,

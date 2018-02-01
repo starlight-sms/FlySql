@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace FlySql.Extensions
 {
-    public class FileSystemSqlEmiter : ISqlEmiter
+    public class FileSystemSqlEmiter : ISdmapEmiter
     {
         private SdmapCompiler _compiler = null;
 
@@ -16,9 +17,9 @@ namespace FlySql.Extensions
             _compiler = compiler;
         }
 
-        public string EmitSql(string sqlMapName, object queryObject)
+        public string Emit(string statementId, object parameters)
         {
-            return _compiler.Emit(sqlMapName, queryObject);
+            return _compiler.Emit(statementId, parameters);
         }
 
         private static SdmapCompiler CreateCompilerFromSqlDirectory(
@@ -67,13 +68,13 @@ namespace FlySql.Extensions
             var watcher = new FileSystemWatcher(sqlDirectory);
             watcher.EnableRaisingEvents = true;
             watcher.NotifyFilter = NotifyFilters.LastWrite;
-            watcher.Changed += (o, e) =>
-            {
-                GC.KeepAlive(watcher);
-                Thread.Sleep(1);
+            watcher.Changed += async (o, e) =>
+            {                
+                await Task.Delay(1);
                 result._compiler = CreateCompilerFromSqlDirectory(
                     sqlDirectory,
                     ensureCompiled);
+                GC.KeepAlive(watcher);
             };
 
             return result;

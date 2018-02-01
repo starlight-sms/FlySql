@@ -2,8 +2,7 @@
 
   <PropertyGroup>
     <Description>A template engine for writing dynamic sql.</Description>
-    <VersionPrefix>0.9.1</VersionPrefix>
-    <TargetFrameworks>netstandard1.6;net451</TargetFrameworks>
+    <TargetFrameworks>netcoreapp2.0;net451</TargetFrameworks>
     <AssemblyName>sdmap</AssemblyName>
     <PackageId>FlySql</PackageId>
     <PackageTags>dynamic sql;ibatis</PackageTags>
@@ -11,26 +10,16 @@
     <PackageLicenseUrl>https://github.com/starlight-sms/FlySql/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/starlight-sms/FlySql</RepositoryUrl>
-    <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.6' ">$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>0.11.7</Version>
-    <AssemblyVersion>0.11.7.0</AssemblyVersion>
-    <FileVersion>0.11.7.0</FileVersion>
+    <Version>0.12.0.5</Version>
+    <AssemblyVersion>0.12.0.5</AssemblyVersion>
+    <FileVersion>0.12.0.5</FileVersion>
     <Authors>sdcb</Authors>
     <PackageProjectUrl>https://github.com/starlight-sms/FlySql</PackageProjectUrl>
     <Copyright>MIT</Copyright>
   </PropertyGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
-    <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.3.0" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
 
   <ItemGroup>
     <Antlr4 Include="Parser/G4/SdmapLexer.g4">
@@ -50,7 +39,6 @@
     <PackageReference Include="Antlr4.CodeGenerator" Version="4.6.4">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="System.Dynamic.Runtime" Version="4.3.0" />
   </ItemGroup>
 
 </Project>

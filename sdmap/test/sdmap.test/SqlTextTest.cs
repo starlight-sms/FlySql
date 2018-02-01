@@ -9,18 +9,34 @@ namespace FlySql.test
     public class SqlTextTest
     {
         [Fact]
-        public void DoubleHashWillEmitSingleHash()
+        public void SlashHashWillEmitSingleHash()
         {
-            var code = "sql v1{##}";
+            var code = @"sql v1{\#}";
             var result = Run(code, "v1");
             Assert.Equal("#", result);
         }
 
-        public static string Run(string code, string sqlId)
+        [Fact]
+        public void SlashCurlyBraceWillEmitSingleHash()
+        {
+            var code = @"sql v1{\}}";
+            var result = Run(code, "v1");
+            Assert.Equal("}", result);
+        }
+
+        [Fact]
+        public void ErrorCurlyBraceWillStillWork()
+        {
+            var code = "sql v1{}} sql v2{test}";
+            var result = Run(code, "v2");
+            Assert.Equal("test", result);
+        }
+
+        public static string Run(string code, string sqlId, object obj = null)
         {
             var c = new SdmapCompiler();
             c.AddSourceCode(code);
-            return c.Emit(sqlId, null);
+            return c.Emit(sqlId, obj);
         }
     }
 }

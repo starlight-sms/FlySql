@@ -16,13 +16,40 @@ namespace FlySql.unittest.LexerTest
         [Fact]
         public void DoubleHashIsHash()
         {
-            var code = "sql v1{##}";
+            var code = "sql v1{\\#}";
             var ats = new AntlrInputStream(code);
             var lexer = new SdmapLexer(ats);
             var tokens = lexer.GetAllTokens();
             Assert.Equal(
                 new[] { KSql, SYNTAX, OpenCurlyBrace, SQLText, CloseSql },
                 tokens.Select(x => x.Type));
+        }
+
+        [Fact]
+        public void DoubleCurlyBraceWontThrow()
+        {
+            var code = "sql v1{}}";
+            var ats = new AntlrInputStream(code);
+            var lexer = new SdmapLexer(ats);
+            var tokens = lexer.GetAllTokens();
+        }
+
+        [Fact]
+        public void ErrorCurlyBraceWillStillWork()
+        {
+            var code = "sql v1{}} sql v2{}";
+            var ats = new AntlrInputStream(code);
+            var lexer = new SdmapLexer(ats);
+            var tokens = lexer.GetAllTokens();
+        }
+
+        [Fact]
+        public void ErrorCurlyInMacro()
+        {
+            var code = "sql v1{#test<sql{}}>}";
+            var ats = new AntlrInputStream(code);
+            var lexer = new SdmapLexer(ats);
+            var tokens = lexer.GetAllTokens();
         }
 
         [Fact]
@@ -40,7 +67,7 @@ namespace FlySql.unittest.LexerTest
         [Fact]
         public void DoubleHashWillEmitSingleHash()
         {
-            var sqlText = "##";
+            var sqlText = "\\#";
             var result = SqlTextUtil.Parse(sqlText);
             Assert.Equal("#", result);
         }

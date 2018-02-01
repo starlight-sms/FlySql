@@ -4,8 +4,8 @@ using System.Text;
 
 namespace FlySql.Extensions
 {
-    public interface ISqlEmiter
+    public interface ISdmapEmiter
     {
-        string EmitSql(string sqlMapName, object queryObject);
+        string Emit(string statementId, object parameters);
     }
 }

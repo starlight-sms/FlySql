@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sdmap.ext.Dapper;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,9 +11,9 @@ namespace FlySql.Extensions.test
 {
     public class SmokeTest
     {
-        private class SimpleSqlEmiter : ISqlEmiter
+        private class SimpleSqlEmiter : ISdmapEmiter
         {
-            public string EmitSql(string sqlId, object queryObject)
+            public string Emit(string sqlId, object queryObject)
             {
                 return sqlId;
             }
@@ -21,8 +22,8 @@ namespace FlySql.Extensions.test
         [Fact]
         public void SqlEmiterTest()
         {
-            FlySqlExtensions.SetSqlEmiter(new SimpleSqlEmiter());
-            var actual = FlySqlExtensions.EmitSql("test", null);
+            DbConnectionExtensions.SetSqlEmiter(new SimpleSqlEmiter());
+            var actual = DbConnectionExtensions.EmitSql("test", null);
             Assert.Equal("test", actual);
         }
 
@@ -32,13 +33,13 @@ namespace FlySql.Extensions.test
             Directory.CreateDirectory("sqls");
             var tempFile = @"sqls\test.sdmap";
             File.WriteAllText(tempFile, "sql Hello{Hello}");
-            FlySqlExtensions.SetSqlDirectoryAndWatch(@".\sqls");
+            DbConnectionExtensions.SetSqlDirectoryAndWatch(@".\sqls");
 
             try
             {
                 File.WriteAllText(tempFile, "sql Hello{Hello2}");
                 Thread.Sleep(30);
-                var text = FlySqlExtensions.EmitSql("Hello", null);
+                var text = DbConnectionExtensions.EmitSql("Hello", null);
                 Assert.Equal("Hello2", text);
             }
             finally
