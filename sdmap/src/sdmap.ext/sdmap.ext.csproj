@@ -3,13 +3,13 @@
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.0;net451;netstandard20</TargetFrameworks>
     <AssemblyName>sdmap.ext</AssemblyName>
-    <PackageId>sdmap.ext</PackageId>
+    <PackageId>SMSOneSQL.Extensions</PackageId>
     <PackageTags>dynamic sql;sdmap</PackageTags>
     <PackageReleaseNotes>For more information, please view:
-https://github.com/sdcb/sdmap/blob/master/ReleaseNotes.md</PackageReleaseNotes>
+https://github.com/starlight-sms/SMSOneSQL/blob/master/ReleaseNotes.md</PackageReleaseNotes>
     <PackageLicenseUrl></PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/sdcb/sdmap</RepositoryUrl>
+    <RepositoryUrl>https://github.com/starlight-sms/SMSOneSQL</RepositoryUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>

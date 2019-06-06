@@ -3,19 +3,19 @@
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.0;net451;netstandard20</TargetFrameworks>
     <AssemblyName>sdmap.ext.Dapper</AssemblyName>
-    <PackageId>sdmap.ext.Dapper</PackageId>
+    <PackageId>SMSOneSQL.Extensions.Dapper</PackageId>
     <PackageTags>dynamic sql;sdmap;dapper</PackageTags>
     <PackageReleaseNotes>For more information, please view:
-https://github.com/sdcb/sdmap/blob/master/ReleaseNotes.md</PackageReleaseNotes>
+https://github.com/starlight-sms/SMSOneSQL/blob/master/ReleaseNotes.md</PackageReleaseNotes>
     <PackageLicenseUrl></PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/sdcb/sdmap</RepositoryUrl>
+    <RepositoryUrl>https://github.com/starlight-sms/SMSOneSQL</RepositoryUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <Version>0.16.1</Version>
     <Description>Dapper extensions for sdmap.</Description>
-    <PackageProjectUrl>https://github.com/sdcb/sdmap</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/starlight-sms/SMSOneSQL</PackageProjectUrl>
     <Authors>sdcb</Authors>
     <Copyright>MIT</Copyright>
     <AssemblyVersion>0.16.1</AssemblyVersion>
