@@ -1,8 +1,8 @@
-# sdmap [![NuGet](https://img.shields.io/badge/nuget-0.16.1-blue.svg)](https://www.nuget.org/packages/sdmap)
+# SMSOneSQL [![NuGet](https://img.shields.io/badge/nuget-0.16.1-blue.svg)](https://www.nuget.org/packages/SMSOneSQL)
 A template engine for writing dynamic sql:
 ![vstool](./sdmap/src/sdmap.vstool/vstool.png)
 
-sdmap has it's own benifics over other dynamic SQL package/framework (like iBatis.NET):
+SMSOneSQL has it's own benifics over other dynamic SQL package/framework (like iBatis.NET):
 * Very simple Domain-Specific-Language(or DSL) to enhance the dynamic SQL expression
 * Implemented by Common-Intermediate-Language(or CIL) to ensure the performance
 * Visual Studio integrated, with code-highlight, code-folding and navigate-to features supported
@@ -11,14 +11,14 @@ sdmap has it's own benifics over other dynamic SQL package/framework (like iBati
 * Fully unit test covered.
 
 ## NuGet Package:
-* https://www.nuget.org/packages/sdmap
-* https://www.nuget.org/packages/sdmap.ext
-* https://www.nuget.org/packages/sdmap.ext.Dapper
+* https://www.nuget.org/packages/SMSOneSQL
+* https://www.nuget.org/packages/SMSOneSQL.Extensions
+* https://www.nuget.org/packages/SMSOneSQL.Extensions.Dapper
 
 ## How to use? (with Dapper)
-1. Install package: `sdmap.ext.Dapper`
+1. Install package: `SMSOneSQL.Extensions.Dapper`
 
-You can just only install `sdmap.ext.Dapper` since it will automatically install all dependencies including `sdmap` and `sdmap.ext`.
+You can just only install `SMSOneSQL.Extensions.Dapper` since it will automatically install all dependencies including `SMSOneSQL` and `SMSOneSQL.Extensions`.
 
 2. Create a empty text file, and renames it into .sdmap
 3. Set the file "Build operation" from "None" to "Embedded Resource" in item Property Window.
@@ -60,13 +60,13 @@ https://marketplace.visualstudio.com/items?itemName=sdmapvstool.sdmapvstool
 
 ## How to Compile
 1. Install .NET Core SDK(https://www.microsoft.com/net/download/core)
-2. Download code(`git clone https://github.com/sdcb/sdmap.git`)
+2. Download code(`git clone https://github.com/starlight-sms/SMSOneSQL.git`)
 3. JRE 1.6+ is preferred for building performance purpose but not required
 4. dotnet restore
 5. dotnet build
 
 ## Release notes: 
-https://github.com/sdcb/sdmap/blob/master/ReleaseNotes.md
+https://github.com/starlight-sms/SMSOneSQL/blob/master/ReleaseNotes.md
 
 ## Document/Wiki
 https://github.com/sdcb/sdmap/wiki
